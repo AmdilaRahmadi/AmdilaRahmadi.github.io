@@ -1,18 +1,54 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>pIp</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav>
+<head>
+    <title>pIp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Project</a></li>
+            <li><a href="#section4">Social</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div id="section1">
+            <table>
+                <tr>
+                    <td>
+                        <img src="asset/muelpanik.png" alt="Profile Photo">
+                    </td>
+                    <td>
+                        <h1>Hi! I'm here too...</h1>
+                        <p></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="section2">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor enim nec turpis tincidunt, vel hendrerit nunc convallis.</p>
+        </div>
+        <div id="section3">
+            <!-- Content for the Project section -->
+            <h2>My Projects</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">My Project</a></li>
-                <li><a href="#">Social</a></li>
+                <li><a href="project1.html">Project 1</a></li>
+                <li><a href="project2.html">Project 2</a></li>
             </ul>
-          </nav>
-          <h1>Hello</h1>
-    </body>
-
+        </div>
+        <div id="section4">
+            <!-- Content for the Social section -->
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/your-facebook-profile" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="https://www.twitter.com/your-twitter-profile" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/your-instagram-profile" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
