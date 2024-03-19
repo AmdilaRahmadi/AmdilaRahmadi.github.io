@@ -46,15 +46,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* #section2, #section3, #section4 {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-
 #section2 h2, #section3 h2, #section4 h2 {
     text-align: center;
 }
@@ -119,9 +110,14 @@ table td {
     text-align: center;
 }
 
-img {
+.profile-image{
     border: 2px solid black;
     border-radius: 10px;
+}
+
+.project-image {
+    width: 50px;
+    height: auto;
 }
 
 button {
@@ -135,9 +131,6 @@ button {
 button:hover {
     background-color: #444;
 }
-
-/* Add more specific styling for the sections as needed */
-
 
 nav {
     background-color: #353535;
