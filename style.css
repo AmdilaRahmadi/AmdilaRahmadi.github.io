@@ -1,170 +1,161 @@
-body {
+/* Reset beberapa gaya default */
+body, ul {
     margin: 0;
     padding: 0;
+}
+
+/* Gaya untuk Navigation Bar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Gaya untuk Body dan Container */
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-nav {
-    background-color: #000000;
-}
-nav ul {
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: 20px;
-}
-nav ul li {
-    display: inline-block;
-}
-nav ul li a {
-    display: block;
-    padding: 20px 50px;
-    text-decoration: none;
-    color: #ffffff;
-}
-nav ul li a:hover {
-    background-color: #200135;
-    color: #ff8be6;
-}
-
-#content {
-    margin-left: 250px;
-    transition: margin-left 0.5s;
-}
-
-#section1 {
-    background-color: #200135;
+.container {
     flex: 1;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    min-height: 80vh;
+    position: relative;
+    background-image: url('asset/index_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    overflow: hidden;
 }
 
-#section2 h2, #section3 h2, #section4 h2 {
+/* Gaya untuk Footer */
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-}
-    
-#section2 p, #section3 ul, #section4 ul {
-    text-align: center;
-}
-
-#section3 ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    }
-    
-    #section3 li {
-    margin: 0 10px;
-    }
-    
-    #section3 li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    }
-    
-    #section3 li a i {
-    margin-right: 5px;
-    }
-
-#section4 ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    }
-    
-    #section4 li {
-    margin: 0 10px;
-    }
-    
-    #section4 li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    }
-    
-    #section4 li a i {
-    margin-right: 5px;
-    }
-
-table {
-    border-collapse: collapse;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
 
-table td {
+/* Gaya Section */
+.centered-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.profile-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Colored Block untuk About dan Passion */
+.colored-block {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+}
+
+.block-gray {
+    background-color: #e0e0e0;
+}
+
+.tm-section {
+    margin-top: 20px;
+}
+
+.tm-container-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
     padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Gaya Social Icons */
+.social-icons {
+    margin-top: 15px;
     text-align: center;
 }
 
-.profile-image{
-    border-radius: 50px;
-    max-width: 35%;
-    max-height: 35%;
-    object-fit: cover;
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
 }
 
-.project-image {
+/* Center the title and icons */
+.social-icons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 15px; /* Adjust spacing between icons */
+    color: #333;
+    font-size: 30px; /* Increase icon size */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0073e6; /* Change icon color on hover */
+}
+
+.col-md-6 h3 {
+    text-align: center;
+    font-size: 24px; /* Adjust title size if needed */
+    margin-bottom: 20px; /* Add some space between title and icons */
+}
+
+
+/* Gaya untuk Bola Interaktif */
+.ball {
+    position: absolute;
     width: 50px;
     height: 50px;
-}
-
-.sosmed-image {
-    width: 50px;
-    height: 50px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #444;
-}
-
-nav {
-    background-color: #353535;
-}
-
-#sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #353535;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-#sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-#content {
-    margin-left: 0;
-    transition: margin-left 0.5s;
-}
-
-#content.active {
-    margin-left: 250px;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+    z-index: 10;
 }
