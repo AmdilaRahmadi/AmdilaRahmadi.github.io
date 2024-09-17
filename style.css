@@ -1,14 +1,15 @@
 /* Reset beberapa gaya default */
-body, ul {
+body, ul, table {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* Gaya untuk Navigation Bar */
 nav {
     background-color: #333;
     overflow: hidden;
-    font-family: Arial, sans-serif;
     padding: 15px;
 }
 
@@ -41,7 +42,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -81,7 +81,6 @@ footer {
     height: auto;
 }
 
-/* Colored Block untuk About dan Passion */
 .colored-block {
     background-color: #f0f0f0;
     padding: 40px 20px;
@@ -89,6 +88,11 @@ footer {
 
 .block-gray {
     background-color: #e0e0e0;
+}
+
+.block-white {
+    background-color: #fff;
+    margin-bottom: 40px;
 }
 
 .tm-section {
@@ -113,19 +117,19 @@ footer {
     box-sizing: border-box;
 }
 
+/* Gaya Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
 /* Gaya Social Icons */
-.social-icons {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    color: #333;
-    font-size: 20px;
-}
-
-/* Center the title and icons */
 .social-icons {
     margin-top: 15px;
     text-align: center;
@@ -148,7 +152,6 @@ footer {
     margin-bottom: 20px; /* Add some space between title and icons */
 }
 
-
 /* Gaya untuk Bola Interaktif */
 .ball {
     position: absolute;
@@ -158,4 +161,17 @@ footer {
     border-radius: 50%;
     display: block;
     z-index: 10;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
 }

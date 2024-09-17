@@ -2,7 +2,7 @@ const container = document.getElementById('container');
 const maxBalls = 999;
 let balls = [];
 let isDragging = false;
-let draggingBall = null; // Simpan bola yang sedang didrag
+let draggingBall = null;
 let animationFrame;
 
 const gravity = 0.2;
